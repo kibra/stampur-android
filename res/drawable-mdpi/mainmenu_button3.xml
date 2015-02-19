@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     
+	<!-- ORDER IS IMPORTANT -->	
+      
+	<item android:drawable="@drawable/ic_mainmenu_stampbook_pressed" 
+		android:state_pressed="true"
+		android:state_focused="false"/> <!-- pressed -->
+	
+	<item android:drawable="@drawable/ic_mainmenu_stampbook_pressed" 
+		android:state_focused="true"
+		android:state_pressed="false"/> <!-- focused -->
+		
+	<item android:drawable="@drawable/ic_mainmenu_stampbook" /> <!-- default -->
+    
+ </selector>

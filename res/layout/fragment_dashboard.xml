@@ -1,0 +1,68 @@
+<com.stampur.android.util.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<Button 
+		android:id="@+id/dashboard_button1"
+        style="@style/mainmenu_DashboardButton"
+        android:text="@string/Inbox"
+        android:drawableTop="@drawable/mainmenu_button1"
+        android:onClick="goToInbox"/>  
+                   
+    <Button 
+    	android:id="@+id/dashboard_button2"
+        style="@style/mainmenu_DashboardButton"
+        android:text="@string/PostMessage"
+        android:drawableTop="@drawable/mainmenu_button2"
+        android:onClick="goToPost"/>
+        
+    <Button 
+    	android:id="@+id/dashboard_button3"
+        style="@style/mainmenu_DashboardButton"
+        android:text="@string/Stampbook"
+        android:drawableTop="@drawable/mainmenu_button3"
+        android:onClick="goToStampBook"/>        
+            
+    <Button 
+    	android:id="@+id/dashboard_button4"
+        style="@style/mainmenu_DashboardButton"
+        android:text="@string/Settings"
+        android:drawableTop="@drawable/mainmenu_button4"
+        android:onClick="goToSettings"/>  
+
+<!-- 
+    <ImageButton 
+    	android:id="@+id/dashboard_button1"
+        style="@style/mainmenu_buttonStyle"
+        android:text="Inbox"
+        android:src="@drawable/mainmenu_button1"
+        android:onClick="goToInbox">
+    </ImageButton>
+        
+    <ImageButton 
+    	android:id="@+id/dashboard_button2"
+        style="@style/mainmenu_buttonStyle"
+        android:text="Post Message"
+        android:src="@drawable/mainmenu_button2"
+        android:onClick="goToPost">
+	</ImageButton>
+        
+    <ImageButton 
+    	android:id="@+id/dashboard_button3"
+		style="@style/mainmenu_buttonStyle"
+        android:text="Stampbook"
+        android:src="@drawable/mainmenu_button3"
+        android:onClick="goToStampBook">
+	</ImageButton>
+        
+    <ImageButton 
+    	android:id="@+id/dashboard_button4"
+        style="@style/mainmenu_buttonStyle"
+        android:text="Settings"
+        android:src="@drawable/mainmenu_button4"
+        android:onClick="goToSettings">
+	</ImageButton>
+-->
+
+</com.stampur.android.util.DashboardLayout>

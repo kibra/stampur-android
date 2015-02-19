@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common Strings -->
+	<string name="description_home">Home</string>
+    <string name="app_name">Stampur</string>
+
+    <!-- Server/JSON Server Strings -->
+    <string name="StampurJSONserver">http://www.stampur.com/json/</string>
+    <string name="StampurImageUploadServer">http://www.stampur.com/imageload/upload_image</string>
+    <string name="ImageLocation">/data/Stampur/images/</string>
+    <string name="StampurMediaServer">http://www.stampur.com/media/thumbs/</string>
+
+    <!-- Activity Bar Title Strings -->
+    <string name="Inbox">Inbox</string>
+    <string name="Settings">Settings</string>
+    <string name="Stampbook">Stamp Book</string>
+    <string name="ViewStamp">View Stamp</string>
+    <string name="ViewMessage">View Message</string>
+    <string name="PostMessage">Post Message</string>
+    <string name="StampMessage">Stamp Message</string>
+    <string name="Home">Home</string>
+    <string name="Refresh">Refresh</string>
+    <string name="Logout">Log Out</string>
+    <string name="Quit">Quit</string>
+
+    <!-- Login Strings -->
+    <string name="AuthError">Email and/or password incorrect!</string>
+
+    <!-- Network Connectivity Strings -->
+    <string name="NoNetworkAvailable">No Internet Connection</string>
+    <string name="NoNetworkTryAgain">You are not connected to any network. Please try again later.</string>
+    <string name="NetworkDialogOk">OK</string>
+
+    <!--  Post Message Strings -->
+    <string name="MessageTitle">Title</string>
+    <string name="MessageBody">Message</string>
+    <string name="Post">Post</string>
+    <string name="AddPhotos">Add Photos</string>
+    <string name="Discard">Discard</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Okay">OK</string>
+    <string name="PostSelectPicture">Select Picture</string>
+    <string name="ClickToAddStamps">Click Here to Add Stamps</string>
+    <string name="ClickToAddPics">Click Here to Attach Photos</string>
+    <string name="AddStamps">Add Stamp</string>
+    <string name="PostPickImageSource">Choose Image Source</string>
+    <string name="DiscardConfirm">Do you want to discard the message?</string>
+    <string name="MessageTitleEmpty">Message Title is Empty!</string>
+    <string name="MessageBodyEmpty">Message Body is Empty!</string>
+    <string name="MessageStampsEmpty">Please add at least one stamp!</string>
+    <string name="MessagePosted">Message Posted Successfully!</string>
+    <string name="StampsAdded">Stamps Added Successfully!</string>
+    <string name="PicsAdded">Photos Added Successfully!</string>
+
+    <!-- Stamp Message Strings -->
+    <string name="SearchStamps">Search Stamps</string>
+    <string name="PickStampType">Select Category</string>
+    <string name="AllStamps">All Categories</string>
+    <string name="UserStamps">Your Stampbook</string>
+    <string name="AddedStamps">AddedStamps</string>
+    <string name="SelectedStamps">Selected Stamps</string>
+    <string name="AvailableStamps">Available Stamps</string>
+    <string name="SpecialStamps">Special</string>
+    <string name="MaxStampsReached">You can add only up to 4 Stamps!</string>
+    <string name="StampDialogOk">OK</string>
+    <string name="LoadingStampsPleaseWait">Loading Stamps. Please wait...</string>
+
+    <!-- Inbox Strings -->
+    <string name="InboxTitle">Inbox</string>
+    <string name="InboxUser">Inbox</string>
+    <string name="InboxPublic">Stampur</string>
+    <string name="InboxSaved">Saved</string>
+    <string name="InboxSent">Sent</string>
+    <string name="LoadMoreMessages">\nLoad More Messages\n</string>
+    <string name="NoMoreMessages">No More Messages to Load!</string>
+    <string name="InboxComment">%d comment</string>
+    <string name="InboxComments">%d comments</string>
+
+    <!-- View Message / Post Comment Strings -->
+    <string name="CommentTitle">Add Comment</string>
+    <string name="CommentText">Comment</string>
+    <string name="CommentAuthor">Sign with my username</string>
+    <string name="SendComment">Send</string>
+    <string name="CancelComment">Cancel</string>
+    <string name="ListedComments">Comments</string>
+    <string name="AttachedPicture">Attached Picture</string>
+    <string name="Upvote">Upvote</string>
+    <string name="Downvote">Downvote</string>
+
+    <!-- Stamp Book Strings -->
+    <string name="StampbookUser">My Stampbook</string>
+    <string name="StampbookPublic">Public</string>
+    <string name="StampbookSortByName">Name</string>
+    <string name="StampbookSortByUsers">Users</string>
+    <string name="StampbookSortByLocation">Location</string>
+    <string name="CreateStamp">Create Stamp</string>
+
+    <!-- Post Message Pictures Context Menu Strings -->
+    <string name="RemovePic">Remove Picture</string>
+    <string name="RemoveAllPics">Remove All Pictures</string>
+    <string name="AttachMorePics">Attach More Pictures</string>
+    <string name="CancelPicMenu">Cancel</string>
+
+    <!-- Settings -->
+    <string name="SettingsTitle">Settings</string>
+    <string name="EditDescription">Edit Description</string>
+    <string name="UpdateStampDescription">Edit Stamp Description</string>
+    <string name="ChangeImage">Change Image</string>
+    <string name="SettingsSelectPicture">Select Picture</string>
+    <string name="SettingsPickImageSource">Choose Image Source</string>
+    <string name="CurrentPassword">Current Password</string>
+    <string name="NewPassword">New Password</string>
+    <string name="ConfirmPassword">Confirm New Password</string>
+    <string name="UpdatePassword">Update Password</string>
+    <string name="WrongCurrentPassword">Current Password is Incorrect!</string>
+    <string name="WrongConfirmPassword">New and Confirm Password do not match!</string>
+    <string name="SettingsDialogCancel">Cancel</string>
+    <string name="PasswordUpdatedToast">Password Updated Successfully!</string>
+    <string name="SettingsUpdateButton">Update</string>
+    <string name="SettingsCancelButton">Cancel</string>
+	<string name="EditStampDescription">Stamp Description</string>
+	<string name="EditStampLabel">Stamp Name</string>
+	<string name="button_UpdateStamp">Update</string>
+	<string name="button_PublishStamp">Done</string>
+	
+	<string name="FAIL">A very bad thing happened.</string>
+        
+</resources>

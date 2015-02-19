@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ChoosePicSource">
+        <item>Take a Picture</item>
+        <item>Pick from Gallery</item>
+    </string-array>
+</resources>

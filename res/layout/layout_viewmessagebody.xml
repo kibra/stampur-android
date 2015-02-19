@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/viewmessage_headerLayout"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"	
+	android:background="@color/main_bgd">	
+
+	<LinearLayout
+		android:id="@+id/viewmessage_bodyLayout"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@color/main_bgd"
+		android:layout_alignParentTop="true">	
+		
+	    <RelativeLayout
+	        android:id="@+id/viewmessage_titleLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"			
+			android:background="@color/main_bgd"
+			android:layout_alignParentTop="true">    
+	    
+		    <TextView
+				android:id="@+id/viewmessage_messageTitle"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"				
+				android:background="@color/test_bgd"
+				android:textColor="@color/blue"
+				android:textStyle="bold"
+				android:paddingLeft="5dp"
+				android:paddingRight="5dp"
+				android:layout_marginBottom="2dp"
+	            android:autoLink="all" 
+	            android:layout_toLeftOf="@+id/viewmessage_votingLayout"
+	            android:layout_alignParentLeft="true"/>
+	        
+	       	 <LinearLayout
+				android:id="@+id/viewmessage_votingLayout"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"		
+				android:orientation="horizontal"
+				android:background="@color/main_bgd"
+				android:layout_alignParentRight="true"				
+				android:gravity="center">
+		
+				<ImageView
+			    	android:id="@+id/viewmessage_upvote"
+			    	android:src="@drawable/up_arrow"
+			    	android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"	        
+			        android:layout_margin="2dp"       
+			        android:clickable="true"
+			        android:onClick="upvote">
+				</ImageView>
+
+			    <TextView
+			    	android:id="@+id/viewmessage_numVotes"
+			    	android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"	        
+				    android:textColor="@color/main_fgd"
+				    android:layout_margin="2dp" 
+				    android:gravity="center"
+					android:textSize="@dimen/textsize_large">
+				</TextView>
+		
+				<ImageView
+			    	android:id="@+id/viewmessage_downvote"
+			    	android:src="@drawable/down_arrow"
+			    	android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"	        
+			        android:layout_margin="2dp"       
+			        android:clickable="true"
+			        android:onClick="downvote">
+				</ImageView>
+		
+			</LinearLayout>
+	    </RelativeLayout>	    
+	
+	    <TextView
+			android:id="@+id/viewmessage_messageBody"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="@color/test_bgd"
+			android:textColor="@color/main_fgd"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:layout_marginBottom="5dp"
+            android:autoLink="all" />
+	
+	    <LinearLayout
+			android:id="@+id/viewmessage_stampLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:layout_marginBottom="5dp">
+	
+	        <TextView
+				android:id="@+id/viewmessage_stampHeading"
+				style="@style/inboxitem_stampTextViewStyle"
+				android:textStyle="bold"			
+				android:maxWidth="60dp"		
+				android:paddingLeft="0dp"	
+				android:paddingRight="3dp"			
+				android:textColor="@color/main_fgd"		
+				android:background="@color/main_bgd"				
+				android:text="stamps: " />
+	
+		</LinearLayout>
+	    
+	    <HorizontalScrollView 
+	    	android:id="@+id/view_picsScroller"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="10dp">
+			
+	        <LinearLayout 
+	        	android:id="@+id/view_picsLayout"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/main_bgd"/>
+				
+	    </HorizontalScrollView>
+	
+	    <View
+			android:id="@+id/viewmessage_separator"
+			style="@style/tab_separatorLine"
+			android:background="@color/main_fgd"
+			android:layout_height="1dp"
+			android:layout_marginBottom="5dp" />
+	
+	</LinearLayout>
+
+</RelativeLayout>
+
+

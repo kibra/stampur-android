@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/inboxitem_topLevelLayout"
+	android:layout_height="120dp"
+	android:layout_width="match_parent"	
+	android:background="@color/test_bgd"	
+	android:padding="2dp">
+
+	<TextView
+		android:id="@+id/inboxitem_messageTitle"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"	
+		android:layout_alignParentLeft="true"	
+		android:textColor="@color/main_fgd"
+		android:lines="1"
+		android:ellipsize="end"				 
+		android:textStyle="bold"/>   
+
+    <TextView
+		android:id="@+id/inboxitem_messageBody"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"	
+		android:layout_below="@id/inboxitem_messageTitle"	
+		android:textColor="@color/main_fgd"
+		android:lines="2"		
+		android:ellipsize="end"/>
+		
+	<LinearLayout 
+		android:id="@+id/inboxitem_stampLayout"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"	
+		android:layout_below="@id/inboxitem_messageBody"
+		android:layout_alignParentLeft="true"
+		android:orientation="horizontal">
+		
+		<TextView
+			android:id="@+id/inboxitem_stampHeading"
+			style="@style/inboxitem_stampTextViewStyle"			
+			android:maxWidth="60dp"		
+			android:paddingLeft="0dp"	
+			android:paddingRight="3dp"			
+			android:textStyle="bold"	
+			android:textColor="@color/main_fgd"		
+			android:background="@color/main_bgd"
+			android:text="stamps: "/>
+			
+	</LinearLayout>
+	
+	<RelativeLayout 
+		android:id="@+id/inboxitem_bottomRowLayout"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"	
+		android:layout_below="@+id/inboxitem_stampLayout">
+		
+		<TextView
+			android:id="@+id/inboxitem_messageNumComments"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"		
+			android:textColor="@color/main_fgd"		
+			android:layout_alignParentLeft="true"
+			android:lines="1"
+			android:layout_weight="1"/>
+		
+		<TextView
+			android:id="@+id/inboxitem_messageTime"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"   
+			android:textColor="@color/main_fgd"					    
+			android:layout_alignParentRight="true"  		
+			android:lines="1"		
+			android:layout_weight="1"/>
+			
+	</RelativeLayout>
+	
+</RelativeLayout>

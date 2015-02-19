@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listMessagesLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bgd">
+
+    <Spinner
+            android:id="@+id/sortMessageType"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/PickStampType" />
+
+    <ListView
+	    android:id="@+id/messagesList"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center" />
+
+</LinearLayout>

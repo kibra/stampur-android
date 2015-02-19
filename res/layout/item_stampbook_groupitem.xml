@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/stampbook_groupitem_topLevelLayout"
+	android:layout_height="wrap_content"
+    android:layout_width="fill_parent"    
+    android:background="@color/main_bgd"
+    android:padding="2dp">
+
+    <ImageView
+    	android:id="@+id/stampbook_groupitem_displayArrow"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true">
+	</ImageView>       
+
+    <TextView
+    	android:id="@+id/stampbook_groupitem_groupName"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:lines="1"
+		android:ellipsize="end"
+		android:padding="2dp"
+		android:textSize="@dimen/textsize_medium"
+		android:textColor="@color/main_fgd"
+		android:gravity="center"
+        android:layout_toRightOf="@+id/stampbook_groupitem_plusMinus"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"/>    
+
+</RelativeLayout>

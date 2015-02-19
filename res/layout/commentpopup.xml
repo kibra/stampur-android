@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_AddComment"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp">
+
+    <EditText android:id="@+id/postCommentText"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dp"
+              android:layout_marginBottom="10dp"
+              android:autoText="true"
+              android:padding="5dp"
+              android:capitalize="sentences"
+              android:bufferType="normal"
+              android:minHeight="200dp"
+              android:gravity="top"
+              android:hint="@string/CommentText" />
+
+    <RelativeLayout
+            android:id="@+id/commentAuthorLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/isAnonymous"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="true" />
+        <TextView android:id="@+id/commentAuthor"
+                  android:text="@string/CommentAuthor"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/text_item"
+                  android:layout_toRightOf="@id/isAnonymous"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/commentButtonsLayout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+        <Button android:id="@+id/sendCommentButton"
+                android:text="@string/SendComment"
+                android:layout_weight="50"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textColor="@drawable/button_text_style"
+                android:background="@drawable/button_style" />
+        <Button android:id="@+id/cancelCommentButton"
+                android:text="@string/CancelComment"
+                android:layout_weight="50"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:textStyle="bold"
+                android:textColor="@drawable/button_text_style"
+                android:background="@drawable/button_style" />
+    </LinearLayout>
+
+</LinearLayout>

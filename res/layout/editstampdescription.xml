@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_updateStampDesc"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp">
+
+    <EditText android:id="@+id/stampDescText"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="2dp"
+              android:layout_marginBottom="10dp"
+              android:autoText="true"
+              android:padding="5dp"
+              android:capitalize="sentences"
+              android:bufferType="normal"
+              android:minHeight="100dp"
+              android:gravity="top" />
+
+    <LinearLayout
+            android:id="@+id/descButtonsLayout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+        <Button android:id="@+id/updateDescButton"
+                android:text="@string/SettingsUpdateButton"
+                android:layout_weight="50"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:textStyle="bold"
+                android:textColor="@drawable/button_text_style"
+                android:background="@drawable/button_style" />
+        <Button android:id="@+id/cancelUpdateButton"
+                android:text="@string/SettingsCancelButton"
+                android:layout_weight="50"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:enabled="true"
+                android:textStyle="bold"
+                android:textColor="@drawable/button_text_style"
+                android:background="@drawable/button_style" />
+    </LinearLayout>
+
+</LinearLayout>

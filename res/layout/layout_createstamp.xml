@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/createstamp_mainLayout"	
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/main_bgd">
+
+	<RelativeLayout
+		android:id="@+id/createstamp_previewLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"		
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="3dp"
+		android:layout_marginBottom="3dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp">
+	
+	    <TextView
+			android:id="@+id/createstamp_stampLabel"
+			style="@style/stampbookitemStyle"
+			android:layout_alignParentLeft="true"
+			android:layout_marginBottom="2dp" 
+			android:layout_marginTop="2dp"/>
+	    
+		<TextView 
+			android:id="@+id/createstamp_stampDescription"
+			style="@style/stampDescriptionStyle"		
+			android:layout_below="@+id/createstamp_stampLabel"
+			android:layout_alignParentLeft="true"		
+			android:layout_marginBottom="2dp" 
+			android:layout_marginTop="2dp"/>   
+			
+		<Button
+			android:id="@+id/createstamp_publishStampButton"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/createstamp_stampDescription"
+			android:text="@string/button_PublishStamp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:textColor="@drawable/button_text_style"
+			android:background="@drawable/button_style" />
+	
+	</RelativeLayout>
+
+	<View
+		android:id="@+id/createstamp_separator1"
+		style="@style/tab_separatorLine"			
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_below="@+id/createstamp_previewLayout" />
+
+	<RelativeLayout
+		android:id="@+id/createstamp_editLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"		
+		android:layout_below="@+id/createstamp_separator1"
+		android:layout_marginTop="3dp"
+		android:layout_marginBottom="3dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp">
+
+		<EditText
+			android:id="@+id/createstamp_editLabel"
+			style="@style/settings_editTextStyle"
+			android:hint="@string/EditStampLabel"
+			android:layout_alignParentTop="true"
+			android:maxLength="50"
+			android:inputType="textShortMessage" 
+			android:layout_marginBottom="2dp" 
+			android:layout_marginTop="2dp"/>
+
+		<EditText
+			android:id="@+id/createstamp_editDescription"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:minHeight="150dp"
+			android:gravity="top"
+			android:textSize="@dimen/textsize_small"
+			android:autoText="false"
+			android:bufferType="normal"    
+			android:hint="@string/EditStampDescription"
+			android:layout_below="@+id/createstamp_editLabel"
+			android:inputType="textLongMessage" 
+			android:layout_marginBottom="2dp" 
+			android:layout_marginTop="2dp"/>
+		
+		<Button
+			android:id="@+id/createstamp_editDescriptionButton"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/createstamp_editDescription"
+			android:text="@string/button_UpdateStamp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:textColor="@drawable/button_text_style"
+			android:background="@drawable/button_style" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>

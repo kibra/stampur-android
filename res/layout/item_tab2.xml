@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2_topLevelLayout"
+    android:layout_height="match_parent"    
+    android:layout_width="match_parent"    
+    android:background="@color/main_bgd">
+    
+    <View 
+		android:id="@+id/tab2_separator1" 
+		style="@style/tab_separatorLine"			
+		android:layout_alignParentTop="true"
+		android:layout_height="1px"
+		android:background="@color/main_fgd"/>
+    
+    <RelativeLayout
+    	android:id="@+id/tab2_sortbyBarLayout"
+    	android:layout_height="wrap_content"  
+    	android:layout_width="match_parent"     	    	 
+    	android:gravity="center_vertical"
+    	android:layout_below="@+id/tab2_separator1"
+    	android:padding="2dp"
+    	android:background="@color/main_bgd">
+    
+        <TextView 
+        	android:id="@+id/tab2_sortOptionsHeading"
+        	style="@style/tab_sortbyBarTextStyle"
+        	android:layout_alignParentLeft="true"
+        	android:text="Sort by:"
+        	android:textStyle="bold"
+        	android:paddingLeft="2dp" 
+        	android:paddingRight="10dp"/>          
+        <TextView 
+        	android:id="@+id/tab2_sortOption1"
+        	style="@style/tab_sortbyBarTextStyle" 
+        	android:layout_toRightOf="@+id/tab2_sortOptionsHeading"
+        	android:text="Alphabetic"
+        	android:clickable="true"
+        	android:onClick="updateTab"/>
+        <TextView 
+        	android:id="@+id/tab2_sortOption2"
+        	style="@style/tab_sortbyBarTextStyle"         	
+        	android:layout_toRightOf="@+id/tab2_sortOption1"
+        	android:text="Popular"
+        	android:clickable="true"
+        	android:onClick="updateTab"/>
+        <TextView 
+        	android:id="@+id/tab2_sortOption3"
+        	style="@style/tab_sortbyBarTextStyle" 
+        	android:layout_toRightOf="@+id/tab2_sortOption2"
+        	android:text="Categories"
+        	android:clickable="true"
+        	android:onClick="updateTab"/>          
+        
+    </RelativeLayout>
+    
+    <View 
+		android:id="@+id/tab2_separator2" 
+		style="@style/tab_separatorLine"				
+		android:layout_below="@+id/tab2_sortbyBarLayout"/>
+	
+	<RelativeLayout
+	    android:id="@+id/tab2_listLayout"
+    	android:layout_height="wrap_content" 
+        android:layout_width="match_parent"              
+        android:layout_below="@+id/tab2_separator2"    
+        android:background="@color/main_bgd">
+        
+	    <ExpandableListView 
+	    	android:id="@+id/tab2_stampList1"
+	    	android:layout_height="wrap_content" 
+	        android:layout_width="match_parent"              
+	        android:layout_alignParentTop="true"
+	        android:visibility="gone"/> 
+        
+     	<ListView 
+	    	android:id="@+id/tab2_stampList2"
+	    	android:layout_height="wrap_content" 
+	        android:layout_width="match_parent"              
+	        android:layout_below="@+id/tab2_stampList1" />	    
+	    
+	</RelativeLayout>    
+		       
+</RelativeLayout>

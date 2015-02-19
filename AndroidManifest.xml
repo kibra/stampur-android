@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.stampur.android"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:installLocation="preferExternal">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="11" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:icon="@drawable/stampur_icon"
+        android:name="com.stampur.android.Stampur"
+        android:label="@string/app_name" android:theme="@style/CustomTheme" android:debuggable="true">
+        
+        <service android:name="com.stampur.android.service.StampurService"/>
+        
+        <activity android:name="com.stampur.android.ui.Activity_MainMenu"/>
+        
+        <activity android:name="com.stampur.android.ui.Activity_Inbox"/>
+        
+        <activity android:name="com.stampur.android.ui.Activity_Login"></activity>
+		
+		<activity android:name="com.stampur.android.ui.Activity_Launch">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		</activity>
+		
+        <activity android:name="com.stampur.android.ui.Activity_PostMessage"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.stampur.android.ui.Activity_StampBook" />
+        
+        <activity android:name="com.stampur.android.ui.Activity_Settings"
+                  android:windowSoftInputMode="stateHidden" />
+        
+        <activity android:name="com.stampur.android.ui.Activity_ViewStamp"/>
+
+        <activity android:name="com.stampur.android.ui.Activity_StampMessage"
+                  android:configChanges="orientation"
+                  android:screenOrientation="portrait" />
+
+        <activity android:name="com.stampur.android.ui.Activity_ViewMessage">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="www.stampur.com" />
+                <data android:host="www.mysoapbox.org" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:pathPattern=".*\/message\/.*" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.stampur.android.ui.Activity_CreateStamp"></activity>
+
+    </application>
+</manifest>

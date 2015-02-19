@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/post_scrollView"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_bgd">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/post_mainLayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="15dp"
+            android:background="@color/main_bgd">
+
+        <EditText android:id="@+id/post_messageTitle"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLines="1"
+                  android:layout_marginTop="2dp"
+                  android:layout_marginBottom="10dp"
+                  android:ems="25"
+                  android:autoText="true"
+                  android:capitalize="sentences"
+                  android:scrollHorizontally="true"
+                  android:bufferType="normal"
+                  android:singleLine="true"
+                  android:hint="@string/MessageTitle"
+                  android:imeOptions="actionNext" />
+
+        <EditText android:id="@+id/post_messageBody"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="2dp"
+                  android:layout_marginBottom="10dp"
+                  android:autoText="true"
+                  android:padding="5dp"
+                  android:capitalize="sentences"
+                  android:bufferType="normal" android:scrollbarAlwaysDrawVerticalTrack="true"
+                  android:minHeight="200dp"
+                  android:gravity="top"
+                  android:hint="@string/MessageBody" />
+
+        <HorizontalScrollView android:id="@+id/post_stampsScroller"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="2dp"
+                              android:layout_marginBottom="10dp">
+            <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/post_stampsLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_bgd">
+
+                <Button android:id="@+id/placeholderStampsButton"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ClickToAddStamps"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:onClick="goToStampMessage"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/button_text_style"
+                        android:background="@drawable/button_style" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView android:id="@+id/post_picsScroller"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="2dp"
+                              android:layout_marginBottom="10dp">
+            <LinearLayout android:id="@+id/post_picsLayout"
+                          android:orientation="horizontal"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:background="@color/main_bgd">
+
+                  <Button android:id="@+id/placeholderPicsButton"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ClickToAddPics"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:onClick="choosePictureSource"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/button_text_style"
+                        android:background="@drawable/button_style"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

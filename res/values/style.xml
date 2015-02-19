@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="CustomTheme" parent="android:Theme">
+		<item name="android:windowTitleSize">50dip</item>
+		<item name="android:windowTitleBackgroundStyle">@style/customWindowTitleBackground</item>
+	</style>
+	
+	<style name="customWindowTitleBackground">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+	
+<!-- MAIN MENU ================================================================================ -->
+	
+	<style name="mainmenu_rowLayoutStyle">		
+		<item name="android:layout_height">wrap_content</item> 
+		<item name="android:layout_width">match_parent</item> 	
+		<item name="android:gravity">center</item>	
+		<item name="android:background">@color/row_bgd</item>							
+	</style>	
+	
+	<style name="mainmenu_buttonStyle" parent="android:style/Widget.ImageButton">		
+		<item name="android:layout_height">wrap_content</item> 
+		<item name="android:layout_width">wrap_content</item> 
+		<item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_horizontal</item>	
+		<item name="android:layout_centerVertical">true</item>	
+		<item name="android:background">@color/button_bgd</item>	
+		<item name="android:padding">5dp</item>			
+		<item name="android:clickable">true</item>					
+	</style>
+	
+	<style name="mainmenu_DashboardButton">           
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">@dimen/textsize_small</item>                 
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_fgd</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+<!-- =========================================================================================== -->	
+	
+<!-- TAB ITEM ================================================================================== -->	
+
+	<style name="tab_sortbyBarTextStyle" parent="android:style/Widget.TextView">        
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>        
+        <item name="android:gravity">fill_vertical</item>    
+		<item name="android:paddingRight">5dp</item>    
+		<item name="android:paddingLeft">5dp</item>       
+        <item name="android:textSize">@dimen/textsize_medium</item>     
+        <item name="android:textColor">@color/main_fgd</item>
+        <item name="android:background">@color/main_bgd</item>
+    </style>
+            	
+	<style name="tab_separatorLine">  
+     	<item name="android:layout_height">1px</item>      
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/separator_color</item>
+    </style>   
+    	
+<!-- =========================================================================================== -->	
+
+<!-- TABBAGE =================================================================================== -->	
+
+	<style name="tabbage_tabWidgetStyle" parent="@android:style/Widget.TabWidget">
+		<item name="android:textSize">@dimen/textsize_large</item>  	
+    	<item name="android:textColor">@color/main_fgd</item>
+    	<item name="android:background">@color/main_bgd</item>
+	</style>
+
+<!-- =========================================================================================== -->	
+	
+<!-- INBOX ITEM ================================================================================ -->	
+
+	<style name="inboxitem_stampTextViewStyle" parent="android:style/Widget.TextView">        
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>         
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item> 		 
+		<item name="android:padding">2dp</item>   
+        <item name="android:textSize">@dimen/textsize_small</item>     
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@drawable/bg_inboxitem_stamp</item>  
+        <item name="android:gravity">center</item>     
+    </style>
+        	
+<!-- =========================================================================================== -->	
+		
+<!-- STAMP ITEM ================================================================================ -->	
+		
+	<style name="stampbookitemStyle" parent="android:style/Widget.TextView">        
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>  
+		<item name="android:maxWidth">60dp</item>         
+		<item name="android:lines">1</item>
+		<item name="android:ellipsize">end</item>    
+		<item name="android:paddingTop">2dp</item>    
+		<item name="android:paddingBottom">2dp</item> 
+		<item name="android:paddingRight">5dp</item>    
+		<item name="android:paddingLeft">5dp</item>       
+		<item name="android:textSize">@dimen/textsize_small</item>     
+		<item name="android:textColor">@color/main_fgd</item>
+		<item name="android:background">@drawable/bg_stamp</item>  
+		<item name="android:gravity">center</item>     
+		<item name="android:clickable">true</item>
+	</style>	
+	
+	<style name="stampDescriptionStyle" parent="android:style/Widget.TextView">        
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">match_parent</item>		 
+		<item name="android:padding">3dp</item> 		       
+		<item name="android:textSize">@dimen/textsize_medium</item>     
+		<item name="android:textColor">@color/main_fgd</item>	
+		<item name="android:background">@drawable/bg_inboxitem_stamp</item> 	  
+		<item name="android:gravity">left</item>     
+		<item name="android:minHeight">50dp</item>
+	</style>
+	
+<!-- =========================================================================================== -->
+	
+<!-- SETTINGS ================================================================================== -->	
+		
+	<style name="settings_separatorLineStyle">  
+     	<item name="android:layout_height">1dp</item>      
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/main_fgd</item>
+    </style> 	
+    
+    <style name="settings_editTextStyle" parent="android:style/Widget.EditText">  
+     	<item name="android:layout_height">wrap_content</item>      
+        <item name="android:layout_width">180dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:autoText">false</item>
+        <item name="android:singleLine">true</item>        
+		<item name="android:bufferType">normal</item>               
+    </style>    
+    
+<!-- =========================================================================================== -->
+
+		
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="MaxStamps">4</integer>
+
+    <integer name="PicThumbnailHeight">96</integer>
+    <integer name="PicThumbnailWidth">96</integer>
+    <integer name="PicFullScreenHeight">400</integer>
+    <integer name="PicFullScreenWidth">400</integer>
+
+</resources>

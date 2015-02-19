@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stampMessage_mainLayout"    
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bgd" android:weightSum="1">
+
+    <RelativeLayout android:layout_width="fill_parent" android:id="@+id/searchStampsLayout"
+                    android:layout_height="50dp" android:visibility="gone">
+        <EditText android:id="@+id/searchBar" android:layout_height="match_parent"
+                  android:layout_width="280dip" android:layout_weight="0.80"
+                  android:hint="@string/SearchStamps" android:imeOptions="actionSearch"
+                  android:singleLine="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@+id/searchIcon" android:src="@drawable/search_icon"
+                     android:layout_width="120dip" android:layout_weight="0.20"
+                     android:layout_height="match_parent"
+                     android:layout_toRightOf="@+id/searchBar"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/SelectedStamps"
+            android:background="@color/text_item"
+            android:textColor="@color/main_fgd"
+            android:gravity="center" />
+
+    <GridView
+	    android:id="@+id/addedStampsGrid"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+        android:numColumns="2"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center" />
+
+    <Spinner
+            android:id="@+id/pickStampType"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:prompt="@string/PickStampType" />
+
+    <GridView
+	    android:id="@+id/availableStampsGrid"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:numColumns="2"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center" />
+
+</LinearLayout>

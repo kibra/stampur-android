@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/settings_mainLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bgd">
+
+    <RelativeLayout android:id="@+id/settings_mainRelLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bgd">
+
+        <RelativeLayout
+                android:id="@+id/settings_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+
+            <TextView
+                    android:id="@+id/settings_stampLabel"
+                    style="@style/stampbookitemStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/settings_separator1"
+                style="@style/settings_separatorLineStyle"
+                android:layout_below="@+id/settings_row1" />
+
+        <RelativeLayout
+                android:id="@+id/settings_row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_separator1"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+
+            <ImageView
+                    android:id="@+id/settings_profilePicture"
+                    android:src="@drawable/trotsky"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:padding="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY" />
+
+            <Button
+                    android:id="@+id/settings_chooseProfilePictureButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ChangeImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@drawable/button_text_style"
+                    android:background="@drawable/button_style" />
+
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/settings_separator2"
+                style="@style/settings_separatorLineStyle"
+                android:layout_below="@+id/settings_row2" />
+
+        <TextView
+                android:id="@+id/settings_stampDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_separator2"
+                android:background="@color/test_bgd"
+                android:textColor="@color/main_fgd"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                android:maxHeight="100dp" />
+
+        <Button
+                android:id="@+id/settings_editDescriptionButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/settings_stampDescription"
+                android:text="@string/EditDescription"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:textColor="@drawable/button_text_style"
+                android:background="@drawable/button_style" />
+
+        <View
+                android:id="@+id/settings_separator3"
+                style="@style/settings_separatorLineStyle"
+                android:layout_below="@+id/settings_editDescriptionButton" />
+
+        <RelativeLayout
+                android:id="@+id/settings_row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_separator3"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp">
+
+            <EditText
+                    android:id="@+id/settings_oldPass"
+                    style="@style/settings_editTextStyle"
+                    android:hint="@string/CurrentPassword"
+                    android:layout_alignParentTop="true"
+                    android:inputType="textPassword" />
+
+            <EditText
+                    android:id="@+id/settings_newPass"
+                    style="@style/settings_editTextStyle"
+                    android:hint="@string/NewPassword"
+                    android:layout_below="@+id/settings_oldPass"
+                    android:inputType="textPassword" />
+
+            <EditText
+                    android:id="@+id/settings_newPassConfirm"
+                    style="@style/settings_editTextStyle"
+                    android:hint="@string/ConfirmPassword"
+                    android:layout_below="@+id/settings_newPass"
+                    android:inputType="textPassword" />
+
+            <Button
+                    android:id="@+id/settings_updatePasswordButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/UpdatePassword"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/settings_oldPass"
+                    android:enabled="false"
+                    android:textColor="@drawable/button_text_style"
+                    android:background="@drawable/button_style" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

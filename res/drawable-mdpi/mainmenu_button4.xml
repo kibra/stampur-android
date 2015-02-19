@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     
+	<!-- ORDER IS IMPORTANT -->
+      
+	<item android:drawable="@drawable/ic_mainmenu_settings_pressed" 
+		android:state_pressed="true"/> <!-- pressed -->
+	
+	<item android:drawable="@drawable/ic_mainmenu_settings" 
+		 android:state_focused="true"/> <!-- focused -->
+		 
+	<item android:drawable="@drawable/ic_mainmenu_settings" /> <!-- default -->
+    
+ </selector>
